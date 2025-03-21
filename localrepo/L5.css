@@ -1,0 +1,73 @@
+            body {
+                text-align: center;
+                align-content: center;
+            }
+            
+            div {
+                border: 8px solid black;
+                display: inline-block;
+                font-size: 20px;
+                height: 100px;
+                width: 100px;
+                text-align: center;
+            }
+            
+            #container {
+                /* align-content: center; */
+                height: 300px;
+                width: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: row;
+                /* align-content: flex-start; */
+                /* align-content: flex-end; */
+            }
+            
+            #box1 {
+                background-color: antiquewhite;
+            }
+            
+            #box2 {
+                background-color: aqua;
+                height: 150px;
+            }
+            
+            #box3 {
+                background-color: beige;
+            }
+            
+            #box4 {
+                background-color: blueviolet;
+                /* align-self: flex-end; */
+            }
+            
+            #box5 {
+                background-color: pink;
+            }
+            
+            #media {
+                height: 500px;
+                width: 500px;
+                background-color: brown;
+            }
+            
+            @media(max-width:500px) {
+                #media {
+                    background-color: green;
+                    transform: rotate(45deg);
+                }
+            }
+            
+            @media(min-width:500px) and (max-width: 700px) {
+                #media {
+                    background-color: blue;
+                    transform: rotate(45deg);
+                }
+            }
+            
+            @media(min-width:700px) {
+                #media {
+                    background-color: pink;
+                }
+            }
